@@ -1,0 +1,23 @@
+{
+  "leaders": [{
+    "id": 0,
+    "data": {
+      "question": "Who are you ?",
+      "left_option": "A person",
+      "right_option": "Not a person"
+    },
+    "left_child": null,
+    "right_child": null,
+    "is_leaf": true
+  }],
+  "cmap": {
+    "0": 2
+  },
+  "artifacts": [
+    {
+      "id": 0,
+      "scramble_coeff": 0.25,
+      "description": "sudo-access"
+    }
+  ]
+}
