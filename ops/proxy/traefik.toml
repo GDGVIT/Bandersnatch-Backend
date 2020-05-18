@@ -1,0 +1,39 @@
+defaultEntryPoints = ["http", "https"]
+logLevel = "INFO"
+
+[api]
+  dashboard = true
+  entrypoint = "dashboard"
+
+[entryPoints]
+    [entryPoints.dashboard]
+        address = ":8080"
+    [entryPoints.dashboard.auth]
+        [entryPoints.dashboard.auth.basic]
+            users = ["admin:$apr1$mrWAMDUN$XjHtyxxSGLRIEl..S4SnG0"]
+
+    [entryPoints.http]
+        address = ":80"
+        [entryPoints.http.redirect]
+            entryPoint = "https"
+
+    [entryPoints.https]
+        address = ":443"
+        [entryPoints.https.tls]
+
+[acme]
+    entryPoint = "https"
+    acmeLogging = true
+    email = "vishaals2000@gmail.com"
+    storage = "/acme.json"
+    caServer = "https://acme-staging-v02.api.letsencrypt.org/directory"
+    #onHostRule = true
+    [acme.httpChallenge]
+        entryPoint = "http"
+    [[acme.domains]]
+        main = "playscenario.dscvit.com"
+
+[docker]
+    domain = "playscenario.dscvit.com"
+    watch = true
+    network = "web"

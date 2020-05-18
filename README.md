@@ -1,46 +1,50 @@
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/30529572/72455010-fb38d400-37e7-11ea-9c1e-8cdeb5f5906e.png" />
-	<h2 align="center"> < Insert Project Title Here > </h2>
-	<h4 align="center"> < Insert Project Description Here > <h4>
 </p>
 
----
-[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](INSERT_LINK_FOR_DOCS_HERE) 
-  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](INSERT_UI_LINK_HERE)
+<a href="https://documenter.getpostman.com/view/7086087/SzS8rjbV?version=latest"><img src="https://img.shields.io/badge/-Documentation-black??style=for-the-badge&logo=postman" height="22"></a>
+<p align="center"><img src="https://i.ibb.co/5xcNxBK/gopher.png" alt="gopher"></p>
+<br>
+<p align="center"><img src="https://i.ibb.co/Pr917y2/bandersnatch.png" alt="bandersnatch" border="0"></p>
+<br>
+<h4> Steps to use </h4>
 
+- Clone the repository
 
-## Functionalities
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
-
+`git clone github.com/supercmmetry/bandersnatch`
 <br>
 
+- Change your working directory
 
-## Instructions to run
+`cd bandersnatch`
 
-* Pre-requisites:
-	-  < insert pre-requisite >
-	-  < insert pre-requisite >
+- Create a .env file with necessary key-value pairs.
 
-* < directions to install > 
-```bash
-< insert code >
-```
+| Key          	| Value                                                                                 	|
+|--------------	|---------------------------------------------------------------------------------------	|
+| DB_URI       	| "postgresql://localhost/bandersnatch?user=postgres&password=postgres&sslmode=disable" 	|
+| DEBUG        	| "true"                                                                                	|
+| PORT         	| "1729"                                                                                	|
+| JWT_PASSWORD 	| "password"                                                                            	|
+| NEXUS_FILE   	| "sample.json"                                                                         	|
 
-* < directions to execute >
+- Manage your go modules
 
-```bash
-< insert code >
-```
+ `go mod tidy`
+
+- Create a database in postgresql
+
+- Run your go program
+
+`go run main.go`
+
 
 <br>
 
 ## Contributors
 
-* [ < INSERT NAME HERE > ](INSERT_PROFILE_URL_HERE)
-* [ < INSERT NAME HERE > ](INSERT_PROFILE_URL_HERE)
+* [supercmmetry](https://github.com/supercmmetry)
+* [SaurusXI](https://github.com/SaurusXI)
 
 
 
@@ -50,4 +54,3 @@
 <p align="center">
 	Made with :heart: by DSC VIT
 </p>
-
